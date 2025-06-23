@@ -1,8 +1,8 @@
 provider "aws" {
-  region = "eu-north-1"
+  region = var.region
 }
 
 resource "aws_s3_bucket" "vedr0" {
-  bucket = "bucket-nekus88"
+  bucket = var.bucket_name
 }
 
